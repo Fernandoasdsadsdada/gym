@@ -1,0 +1,53 @@
+.stats-section {
+    padding: 70px 0;
+    background: var(--surface);
+    border-block: 1px solid var(--line);
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: 1.5fr repeat(3,1fr);
+    align-items: center;
+    gap: 35px;
+}
+
+.stats-intro h2,
+.section-heading h2,
+.manifesto h2,
+.testimonial-wrap h2,
+.contact-copy h2 {
+    font: 800 clamp(35px,4vw,54px)/.96 var(--display);
+    letter-spacing: .3px;
+    margin-top: 14px;
+}
+
+.stats-intro h2 em,
+.section-heading h2 em,
+.manifesto h2 em,
+.testimonial-wrap h2 em,
+.contact-copy h2 em {
+    font-style: normal;
+    color: var(--green);
+}
+
+.stat {
+    border-left: 1px solid var(--line);
+    padding-left: 28px;
+}
+
+.stat strong {
+    font: 800 52px/.95 var(--display);
+    display: block;
+}
+
+.stat strong .green {
+    color: var(--green);
+}
+
+.stat > span {
+    font-size: 9px;
+    letter-spacing: 1.5px;
+    color: var(--muted);
+    display: block;
+    margin-top: 10px;
+}

@@ -1,0 +1,37 @@
+.manifesto {
+    position: relative;
+    min-height: 590px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.manifesto-image {
+    position: absolute;
+    inset: 0;
+    background: url('https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?auto=format&fit=crop&w=2000&q=85') center 40%/cover;
+}
+
+.manifesto-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg,rgba(5,9,6,.97),rgba(5,9,6,.7) 48%,rgba(5,9,6,.1)),linear-gradient(0deg,rgba(5,9,6,.5),transparent);
+}
+
+.manifesto-content {
+    position: relative;
+    padding-block: 90px;
+}
+
+.manifesto h2 {
+    font-size: clamp(55px,7vw,88px);
+    margin: 20px 0;
+}
+
+.manifesto p {
+    max-width: 460px;
+    color: #c3cbc2;
+    font-size: 13px;
+    line-height: 1.9;
+    margin-bottom: 28px;
+}

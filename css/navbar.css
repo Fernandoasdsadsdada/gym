@@ -1,0 +1,131 @@
+.header {
+    height: 84px;
+    position: absolute;
+    inset: 0 0 auto;
+    z-index: 20;
+    border-bottom: 1px solid rgba(255,255,255,.09);
+}
+
+.navbar {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.brand-mark {
+    width: 34px;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    transform: skew(-17deg);
+}
+
+.brand-mark span {
+    display: block;
+    width: 8px;
+    background: var(--green);
+    height: 25px;
+}
+
+.brand-mark span:nth-child(2) {
+    height: 34px;
+}
+
+.brand-mark span:nth-child(3) {
+    height: 18px;
+}
+
+.brand-copy {
+    font: 800 22px/.85 var(--display);
+    letter-spacing: 1.2px;
+}
+
+.brand-copy b {
+    color: var(--green);
+}
+
+.brand-copy small {
+    display: block;
+    font: 600 8px var(--body);
+    letter-spacing: 2.5px;
+    color: var(--muted);
+    margin-top: 7px;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.nav-menu > a:not(.btn) {
+    font-size: 12px;
+    font-weight: 600;
+    color: #d0d5cf;
+    transition: color .25s;
+}
+
+.nav-menu > a:not(.btn):hover {
+    color: var(--green);
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    padding: 15px 21px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: .8px;
+    text-transform: uppercase;
+    transition: transform .25s, background .25s, color .25s, border-color .25s;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+}
+
+.btn span {
+    font-size: 17px;
+    line-height: 0;
+}
+
+.btn-primary {
+    background: var(--green);
+    color: #10150b;
+}
+
+.btn-primary:hover {
+    background: #d0ff79;
+}
+
+.btn-outline {
+    border-color: var(--green);
+    color: var(--green);
+}
+
+.btn-outline:hover {
+    background: var(--green);
+    color: #10150b;
+}
+
+.btn-small {
+    padding: 11px 15px;
+}
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: 0;
+}

@@ -1,0 +1,142 @@
+.hero {
+    min-height: 740px;
+    height: min(850px, 100svh);
+    position: relative;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.hero-bg {
+    position: absolute;
+    inset: 0;
+    background: url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=2200&q=90') center 42%/cover;
+    transform: scale(1.04);
+    animation: heroZoom 12s ease-out forwards;
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg,rgba(5,9,6,.96) 0%,rgba(5,9,6,.79) 42%,rgba(5,9,6,.16) 100%),linear-gradient(0deg,#080b09 0%,transparent 28%,rgba(0,0,0,.2) 100%);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    padding-top: 70px;
+    animation: rise .9s both;
+}
+
+.eyebrow, .section-kicker {
+    font-size: 10px;
+    letter-spacing: 2.5px;
+    font-weight: 700;
+    color: var(--green);
+}
+
+.eyebrow {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    margin-bottom: 22px;
+}
+
+.pulse-dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: var(--green);
+    box-shadow: 0 0 0 5px rgba(182,255,59,.12);
+    animation: pulse 2s infinite;
+}
+
+.hero h1 {
+    font: 900 clamp(76px,10vw,138px)/.79 var(--display);
+    letter-spacing: -2px;
+    margin-bottom: 30px;
+}
+
+.hero h1 span {
+    color: var(--green);
+}
+
+.hero-description {
+    max-width: 440px;
+    color: #c2c9c1;
+    font-size: 14px;
+    line-height: 1.9;
+    margin-bottom: 30px;
+}
+
+.hero-actions {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+.text-link {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: .7px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.play-icon {
+    width: 28px;
+    height: 28px;
+    border: 1px solid rgba(255,255,255,.5);
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    font-size: 9px;
+    padding-left: 2px;
+}
+
+.hero-note {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 65px;
+    font-size: 9px;
+    letter-spacing: 2px;
+    color: #a8b0a7;
+}
+
+.hero-note .line {
+    height: 1px;
+    width: 38px;
+    background: var(--green);
+}
+
+.hero-side-label {
+    position: absolute;
+    right: 34px;
+    top: 50%;
+    writing-mode: vertical-rl;
+    font-size: 9px;
+    letter-spacing: 2px;
+    color: rgba(255,255,255,.65);
+}
+
+.scroll-cue {
+    position: absolute;
+    bottom: 35px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 8px;
+    letter-spacing: 2px;
+    color: #aab1a8;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.scroll-cue span {
+    height: 34px;
+    width: 1px;
+    background: var(--green);
+}
